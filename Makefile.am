@@ -1,0 +1,6 @@
+
+SUBDIRS = src
+
+doc_DATA = README.rst
+
+EXTRA_DIST = README.rst
