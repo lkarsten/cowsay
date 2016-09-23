@@ -1,0 +1,22 @@
+build:
+  test:
+    image: ubuntu:trusty
+    commands:
+      - apt-get -y install build-essential make
+      - ./bootstrap
+      - ./configure
+      - make
+      - make check
+
+#  build:
+#    image: golang:latest
+#    commands:
+#      - make build
+#    when:
+#      matrix:
+#        GO_VERSION: 1.7
+
+#matrix:
+#  GO_VERSION:
+#    - 1.6
+#    - 1.7 
